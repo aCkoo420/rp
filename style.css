@@ -6,10 +6,16 @@ body {
     background-size: 120%;
     background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
   }
+ 
   
   a {
     color: white;
+  }
+  .img{
+    max-width: 150px;
+    max-height: 100px;
   }
   
   header {
@@ -24,8 +30,8 @@ body {
   
   header .logo {
     color: #000;
-    width: 22%;
-    height: auto;
+    width: auto;
+    height: 50px;
     float: left;
     
   }
@@ -52,7 +58,7 @@ body {
     font-family: fontAwesome;
     position: absolute;
     line-height: 50px;
-    color: #fff;
+    color: #fff!important;
     right: 1px;
   }
   header nav ul li.active.sub-menu:before {
@@ -62,27 +68,30 @@ body {
   header nav ul li ul {
     position: absolute;
     left: 0;
-    background: #333;
-    display: none
+    background: beige!important;
+    display: none;
   }
   
   header nav ul li.active ul {
-  
-    display: block;
+    color: beige!important;
+    display: block!important;
+    z-index: 999;
   }
   
   header nav ul li ul li {
     display: block;
     width: 200px;
+    color: #000!important;
   }
   
   header nav ul li a {
     height: 50px;
     line-height: 50px;
     padding: 0 20px;
-    color: #000;
+    color: #000!important;
     text-decoration: none;
     display: block;
+    z-index: 999;
   }
   
   header nav ul li a:hover {
@@ -95,17 +104,19 @@ body {
   }
   
   .menu-toggle {
-    color: #fff;
+    color: #000!important;
     float: right;
     line-height: 50px;
     font-size: 24px;
     cursor: pointer;
-    display: none
+    display: none;
+    z-index: 999;
   }
   .carousel-inner img {
     max-width: 1366px;
     max-height: 720px;
     width: 100%;
+    z-index: -1;
     
 }
 main{
@@ -113,15 +124,23 @@ main{
     padding: 10px;
     width: 100%;
 }
+footer main {
+  text-align: left;
+}
 @media (max-width: 1200px) {
     header {
       padding: 0 20px;
     }
+    .img{
+      max-width: 150px;
+      max-height: 100px;
+      width: 50%;
+    }
     
     header .logo {
         color: #000;
-        width: 80px;
-        height: auto;
+        width: auto;
+        height: 50px;
         float: left;
         
       }
@@ -136,7 +155,7 @@ main{
       left: -100%;
       width: 100%;
       height: calc(100vh - 50px);
-      background: #333;
+      background: beige;
       transition: 0s;
     }
     header nav.active {
@@ -151,7 +170,7 @@ main{
     }
     header nav ul li.active ul {
       position: relative;
-      background: #003e6f;
+      background: rgb(248, 226, 154);
     }
     header nav ul li ul li {
       width: 100%;
@@ -173,10 +192,15 @@ main{
     header {
       padding: 0 20px;
     }
+    .img{
+      max-width: 150px;
+      max-height: 100px;
+      width: 50%;
+    }
     header .logo {
         color: #000;
-        width: 80px;
-        height: auto;
+        width: auto;
+        height: 50px;
         float: left;
         
       }
@@ -191,7 +215,7 @@ main{
       left: -100%;
       width: 100%;
       height: calc(100vh - 50px);
-      background: #333;
+      background: beige;
       transition: 0s;
       
     }
@@ -207,7 +231,7 @@ main{
     }
     header nav ul li.active ul {
       position: relative;
-      background: #003e6f;
+      background: rgb(248, 226, 154);
     }
     header nav ul li ul li {
       width: 100%;
@@ -229,9 +253,21 @@ main{
     header {
       padding: 0 20px;
     }
+    .img{
+      max-width: 150px;
+      max-height: 100px;
+      width: 50%;
+    }
     .menu-toggle {
       display: block;
         color: #000;
+    }
+    header .logo {
+      color: #000;
+      width: auto;
+      height: 50px;
+      float: left;
+      
     }
     header nav {
       
@@ -240,7 +276,7 @@ main{
       left: -100%;
       width: 100%;
       height: calc(100vh - 50px);
-      background: #333;
+      background: rgb(248, 226, 154);
       transition: 0s;
     }
     header nav.active {
@@ -255,7 +291,7 @@ main{
     }
     header nav ul li.active ul {
       position: relative;
-      background: #003e6f;
+      background: rgb(248, 226, 154);
     }
     header nav ul li ul li {
       width: 100%;
