@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Neoficiální stránky ZOO Ostrava</title>
+    <title>Neoficiální stránky ZOO Ostrava - Příspěvek</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -42,39 +42,54 @@
     </header>
     <main class="container ozoo center1" > 
            
-        <h2>Přispejte nám</h2>
+        <h2>Adoptujte si zvíře</h2>
         <form >
                 Jméno:<br>
                 <input type="text" name="Krestni jmeno"><br>
                 Příjmení:<br>
                 <input type="text" name="Prijmeni"><br>
-                Na co přispíváte:<br>
-                <input type="text" name="prispevek"><br>
-                Částka:<br>
-                <input type="text" name="castka"><br>
+                Které zvíře si chcete adoptovat:<br>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                      <input class="form-check-input " type="radio" name="zpusob" id="PP" value="Zviře1" checked> <a href="https://cs.wikipedia.org/wiki/Daman_pralesn%C3%AD" style="color:black; font-size:120%"> Daman pralesní</a>
+                  </label>
+              </div>
+              <div class="form-check-inline ">
+                  <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="zpusob" id="PNU" value="Zviře2"> <a href="https://cs.wikipedia.org/wiki/Lemur_b%C4%9Blohlav%C3%BD" style="color:black; font-size:120%"> Lemur běločelý</a>
+                  </label>
+              </div>
+              <div class="form-check-inline" >
+                  <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="zpusob" id="PK" value="Zviře3"> <a href="https://cs.wikipedia.org/wiki/Axis_indick%C3%BD" style="color:black; font-size:120%"> Axis indický</a>
+                  </label>
+              </div><br>
+
+               Částka:<br>
+                <input type="number" min="500" name="castka">Kč/Rok<br>
                 Způsob platby:<br>
                
-                    <div class="form-check form-check-inline">
+                    <div class="form-check form-check-inline color">
                             <label class="form-check-label">
                                 <input class="form-check-input" type="radio" name="zpusob" id="PP" value="angličtina" checked> Paypal
                             </label>
                         </div>
-                        <div class="form-check-inline">
+                        <div class="form-check-inline color">
                             <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="zpusob" id="PNU" value="němčina"> Posláním na účet
+                                <input class="form-check-input" type="radio" name="zpusob" id="PNU" value="němčina" > Posláním na účet
                             </label>
                         </div>
-                        <div class="form-check-inline" >
+                        <div class="form-check-inline color" >
                             <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="zpusob" id="PK" value="ruština"> Platební kartou
+                                <input class="form-check-input" type="radio" name="zpusob" id="PK" value="ruština" > Platební kartou
                             </label>
                     </div>
                 
 
-                <div class="color">
-                <button type="submit" class="btn btn-primary color">Potvrdit</button> 
-                <button type="reset" class="btn btn-default color">Obnovit</button>
-            </div>      
+                <div class="">
+                    <button type="submit" class="btn btn-primary " style="color:black; font-size:120%">Potvrdit</button> 
+                    <button type="reset" class="btn btn-default " style=" color:black; font-size:120%">Obnovit</button>
+                </div>      
               </form>
     </main>
 
